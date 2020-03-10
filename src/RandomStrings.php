@@ -25,7 +25,7 @@ class RandomStrings
 		return $stringReturn;
 	}
 
-	public function generate(){
-		return $this->getRandomStrings();
+	public function generate($length = 0){
+		return $this->getRandomStrings($length);
 	}
 }
