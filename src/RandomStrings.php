@@ -9,9 +9,9 @@ class RandomStrings
 	
 	public function getRandomStrings(){
 
-		$string = "ABCDEF"; 
+		$string = "ABCDEFabcd"; 
 		$countString = strlen($string) - 1;
-		$stringArr = explode("", $tring);
+		$stringArr = str_split($string);
 		$stringReturn = "";
 		$lengh = rand(1,100);
 
