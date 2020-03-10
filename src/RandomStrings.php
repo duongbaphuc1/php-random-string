@@ -7,15 +7,18 @@ namespace RandomStrings;
 class RandomStrings
 {
 	
-	public function getRandomStrings(){
+	public function getRandomStrings($length = 0){
 
-		$string = "ABCDEFabcd"; 
+		$string = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
 		$countString = strlen($string) - 1;
 		$stringArr = str_split($string);
 		$stringReturn = "";
-		$lengh = rand(1,100);
+		
+		if($length == 0){
+			$length = rand(1,100);
+		}
 
-		for($i = 0; $i < $lengh; $i++){
+		for($i = 0; $i < $length; $i++){
 			$stringReturn .= $stringArr[rand(1,$countString)];
 		}
 
