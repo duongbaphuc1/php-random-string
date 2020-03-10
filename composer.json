@@ -9,7 +9,7 @@
             "email": "duongbaphuc1@gmail.com"
         }
     ],
-    "autoload:"{
+    "autoload":{
         "psr-4": {
             "RandomStrings\\": "src/"
         }
